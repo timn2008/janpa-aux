@@ -1,3 +1,9 @@
+################################################################
+# Loads basis set assignment and MO data from MOLDEN file
+# (c) Tymofii Nikolaienko, 2020
+################################################################
+
+
 import numpy as np
 import re
 import IPython

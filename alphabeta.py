@@ -1,3 +1,14 @@
+#############################################
+# Creates two 'fake' MOLDEN files from a source one, placing there the subsets
+# of 'alpha' and 'beta' MOs
+# (c) Tymofii Nikolaienkom, 2020
+#############################################
+
+
+# Put file name of your source MOLDEN file here:
+fname = '1.m'
+
+
 from moldenio import *
 import numpy as np
 import re
@@ -15,12 +26,11 @@ def load_matr(fname):
 ### 
 
 
-fname = '1.m'
 print '-'*80
 Va, Vb, na, nb, Ea, Eb, atom_BF_ids, hdr_lines, geom =  load_molden(fname)
 print '-'*80
 
-IPython.embed()
+# IPython.embed()
 
 
 save2molden(fname+'_Alpha.molden', Va, hdr_lines, Ea, 2. * na)

@@ -6,7 +6,7 @@
 
 import numpy as np
 import re
-import IPython
+#import IPython
 
 
 def load_molden(fname):
